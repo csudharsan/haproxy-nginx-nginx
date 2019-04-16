@@ -1,0 +1,13 @@
+---
+- name: Enforce running selinux
+  command: getenforce
+  register: sestatus
+  changed_when: false
+
+- name: Set httpd connect on reboots
+  seboolean:
+    name: httpd_can_network_connect
+    state: yes
+    persistent: yes
+
+...

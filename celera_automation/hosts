@@ -1,0 +1,8 @@
+ansible-controller ansible_host=192.168.30.5 ansible_user=vagrant ansible_ssh_pass=vagrant
+
+[loadbalancer]
+Test1 ansible_host=192.168.30.2 ansible_user=vagrant ansible_ssh_pass=vagrant
+
+[webservers]
+Test2 ansible_host=192.168.30.3 ansible_user=vagrant ansible_ssh_pass=vagrant
+Test3 ansible_host=192.168.30.4 ansible_user=vagrant ansible_ssh_pass=vagrant
